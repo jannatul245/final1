@@ -1,0 +1,38 @@
+#include <graphics.h>
+
+int main()
+{
+
+	int gd = DETECT, gm;
+    initgraph(&gd, &gm, "");
+    initwindow(1000,800,"razib");
+
+
+    setcolor(YELLOW);
+    rectangle(400,200,410,700);
+    rectangle(380,700,430,720);
+rectangle(410,220,710,420);
+
+    setfillstyle(1,WHITE);
+    floodfill(402,201,YELLOW);
+    floodfill(382,701,YELLOW);
+    setcolor(YELLOW);
+    rectangle(410,220,710,420);
+
+
+    setfillstyle(1,GREEN);
+    floodfill(412,222,YELLOW);
+    setcolor(YELLOW);
+    circle(560,320,70);
+    setfillstyle(1,RED);
+    floodfill(562,322,YELLOW);
+
+
+
+     getch();
+
+	closegraph();
+}
+
+
+
